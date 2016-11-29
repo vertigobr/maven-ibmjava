@@ -2,7 +2,7 @@
 #
 FROM ibmjava:8-sdk
 
-MAINTAINER BACEN
+MAINTAINER Vertigo
 
 ARG MAVEN_VERSION=3.3.9
 ARG USER_HOME_DIR="/root"
@@ -20,4 +20,3 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 VOLUME "$USER_HOME_DIR/.m2"
 
 CMD ["/usr/bin/mvn"]
-
