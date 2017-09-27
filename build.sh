@@ -1,7 +1,7 @@
 #!/bin/bash
 [ -f ./setenv.sh ] && source ./setenv.sh
 IMGVERSION=$(head -n 1 .IMGVERSION)
-IMG_VERSION=${IMG_VERSION:-"latest"}
+IMGVERSION=${IMGVERSION:-"latest"}
 IMGNAME=$(head -n 1 .IMGNAME)
 ARGPROXY=
 [[ ! -z "$http_proxy" ]] && ARGPROXY="--build-arg http_proxy=$http_proxy"
